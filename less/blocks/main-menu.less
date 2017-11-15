@@ -1,0 +1,47 @@
+.main-menu {
+  position: relative;
+  z-index: 5;
+}
+
+.main-menu__list {
+  display: flex;
+  justify-content: space-between;
+
+  .list-style();
+}
+
+.main-menu__item {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: #1f1f1f;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #f04239;
+    }
+  }
+
+  &--active {
+    a {
+      color: #f04239;
+    }
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 100%;
+      height: 2px;
+      margin-top: 20px;
+
+      background-color: #f04239;
+    }
+  }
+}

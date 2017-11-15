@@ -1,0 +1,56 @@
+.course {
+  width: 100%;
+
+  font-weight: 300;
+  font-size: 12px;
+
+  td {
+    width: 50%;
+  }
+}
+
+.course__count {
+  color: #808185;
+}
+
+.course__delta {
+  span {
+    position: relative;
+
+    padding-right: 13px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 0;
+
+      display: block;
+
+      border-width: 6px 4px;
+      border-style: solid;
+    }
+  }
+
+  &--up {
+    color: #46b900;
+
+    span {
+      &::after {
+        border-color: transparent transparent currentColor transparent;
+        border-top: none;
+      }
+    }
+  }
+
+  &--down {
+    color: #ee2d24;
+
+    span {
+      &::after {
+        border-color: currentColor transparent transparent transparent;
+        border-bottom: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="page-header">
+  <div class="page-header__wrap">
+    <div class="page-header__top-nav">
+      <div class="branding">
+        <img class="branding__logo" src="img/logo.png" width="69" height="20" alt="logo">
+        <h1 class="branding__site-name">EB</h1>
+      </div>
+
+      <div class="page-header__number">73</div>
+
+      <!-- start secondary-menu -->
+      <ul class="secondary-menu">
+        <li class="secondary-menu__item">
+          <a class="secondary-menu__link secondary-menu__link--bus" href="">Автобусы</a>
+        </li>
+
+        <li class="secondary-menu__item">
+          <a class="secondary-menu__link secondary-menu__link--canteen" href="">Столовая</a>
+        </li>
+
+        <li class="secondary-menu__item">
+          <a class="secondary-menu__link secondary-menu__link--floors" href="">Этажи</a>
+        </li>
+
+        <li class="secondary-menu__item">
+          <a class="secondary-menu__link secondary-menu__link--territory" href="">Территории</a>
+        </li>
+      </ul>
+      <!-- end secondary-menu -->
+
+      <!-- start search-form -->
+      <form action="/search" class="search-form" metdod="get">
+        <div class="textfield">
+          <input class="search-form__input textfield__input" type="search" placeholder="Поиск" aria-label="Поиск">
+        </div>
+      </form>
+      <!-- end search-form -->
+
+      <!-- start user-menu -->
+      <ul class="user-menu">
+        <li>
+          <a class="user-menu__massage" href="" aria-label="massage">
+            <span class="user-menu__massage-count">12</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="user-menu__profile" href="#">
+            <img class="user-menu__avatar" src="img/avatar.jpg" width="30" height="30" alt="">
+            <span class="user-menu__name">Александр</span>
+          </a>
+        </li>
+      </ul>
+      <!-- end user-menu -->
+    </div>
+
+    <!-- start main-menu -->
+    <nav class="page-header__main-menu main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item main-menu__item--active"><a href="#">Наша компания</a></li>
+        <li class="main-menu__item"><a href="#">Наша комада</a></li>
+        <li class="main-menu__item"><a href="#">Моя безопасност</a></li>
+        <li class="main-menu__item"><a href="#">Управляющаяя компания</a></li>
+        <li class="main-menu__item"><a href="#">Наши передприятия</a></li>
+        <li class="main-menu__item"><a href="#">Спаравочники</a></li>
+        <li class="main-menu__item"><a href="#">Сервисы</a></li>
+      </ul>
+    </nav>
+    <!-- end main-menu -->
+
+    <!-- start page-header__content -->
+    <div class="page-header__content">
+      <!-- start page-header__left -->
+      <div class="page-header__left">
+        <!-- start video -->
+        <div class="page-header__video video">
+          <div class="video__preview">
+            <img src="img/video-preview.jpg" alt="">
+          </div>
+          <div class="title__group">
+            <span class="video__subtitle">Евраз ТВ</span>
+            <h3 class="video__title">65-летие Рельсобалочного<br> цеха ЕВРАЗ НТМК</h3>
+          </div>
+        </div>
+        <!-- end video -->
+
+        <!-- start page-header__quote -->
+        <blockquote class="page-header__quote quote">
+          <h3 class="quote__title">Иванов Алексей</h3>
+          <p>Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на запросы клиентов, поставляющей продукцию высокого качества…</p>
+          <cite class="quote__author">Старший Вице-президент,<br> Блок коммерции и развития бизнеса</cite>
+        </blockquote>
+        <!-- end page-header__quote -->
+      </div>
+      <!-- end page-header__left -->
+
+      <!-- start page-header__right -->
+      <div class="page-header__right">
+        <!-- start schedule -->
+        <ul class="schedule">
+          <li class="schedule__item schedule__item--specialist specialist">
+            <img src="img/specialist.jpg" width="50" height="50" alt="" class="specialist__avatar">
+            <div class="specialist__about">
+              <div class="specialist__name">Царенко Владимир</div>
+              <div class="specialist__post">Главный специалист ЕвразХолдинг</div>
+            </div>
+          </li>
+
+          <li class="schedule__item schedule__item--warning">
+            <div class="schedule__date">12 декабря</div>
+            <div class="schedule__title">Встреча с представителями банка ВТБ24</div>
+          </li>
+
+          <li class="schedule__item">
+            <div class="schedule__date">13 января</div>
+            <div class="schedule__title">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</div>
+          </li>
+        </ul>
+        <!-- end schedule -->
+      </div>
+      <!-- end page-header__right -->
+    </div>
+    <!-- end page-header__content -->
+  </div>
+</header>
+
+<!-- start news -->
+<section class="news">
+  <h2 class="news__title">Новости</h2>
+
+  <!-- start news__list -->
+  <ul class="news__list">
+    <li class="news__item">
+      <img src="img/news-1.jpg" width="220" height="165" alt="">
+      <div class="news__content">
+        <div class="news__tag">ЮГ</div>
+        <h3 class="news__item-title">ЕВРАЗ передал здание шахты «МУК-96» Междуреченску</h3>
+        <div class="news__date">Сегодня</div>
+      </div>
+    </li>
+
+    <li class="news__item">
+      <img src="img/news-2.jpg" width="220" height="165" alt="">
+      <div class="news__content">
+        <div class="news__tag">ЮГ</div>
+        <h3 class="news__item-title">На теплоэлектроцентрали ЕВРАЗ Южкокса внедрили систему LOTO</h3>
+      </div>
+    </li>
+
+    <li class="news__item">
+      <img src="img/news-3.jpg" width="220" height="165" alt="">
+      <div class="news__content">
+        <div class="news__tag news__tag--red">ЗСМК</div>
+        <h3 class="news__item-title">ЕВРАЗ ЗСМК посетили представители ключевого дилера строительного металлопроката</h3>
+        <div class="news__date">Вчера</div>
+      </div>
+    </li>
+
+    <li class="news__item">
+      <img src="img/news-4.jpg" width="220" height="165" alt="">
+      <div class="news__content">
+        <div class="news__tag">НТМК</div>
+        <h3 class="news__item-title">ЕВРАЗ НТМК повышает эффективность выплавки стали</h3>
+        <div class="news__date">19 декабря</div>
+      </div>
+    </li>
+  </ul>
+  <!-- end news__list -->
+
+  <div class="news__links">
+    <a href="#" class="btn btn--news">Еще новости</a>
+    <a href="#" class="btn btn--region">Мой регион</a>
+  </div>
+</section>
+<!-- end news -->
+
+<!-- start page-footer -->
+<footer class="page-footer">
+  <div class="page-footer__wrap">
+    <!-- start page-footer__section first -->
+    <div class="page-footer__section">
+      <div class="branding">
+        <img class="branding__logo branding__logo--footer" src="img/footer-kogo.png" alt="logo">
+        <p class="branding__slogan">Мы ценим своих сотрудников и создаем  возможности для их профессионального развития и карьерного роста</p>
+      </div>
+    </div>
+    <!-- end page-footer__section first -->
+
+    <!-- start page-footer__section second -->
+    <div class="page-footer__section">
+      <h3 class="page-footer__title page-footer__title--warning">Горячая линия</h3>
+
+      <ul class="page-footer__list">
+        <li class="contacts">
+          <a class="contacts__number" href="tel:88005558888">8-800-555-88-88</a>
+          <div class="contacts__description">для сотрудников российских предприятий</div>
+        </li>
+
+        <li class="contacts">
+          <a class="contacts__number" href="tel:0800502118">0-800-502-118</a>
+          <div class="contacts__description">для сотрудников украинских предприятий</div>
+        </li>
+
+        <li class="contacts">
+          <a class="contacts__number" href="tel:88000804358">8-800-080-43-58</a>
+          <div class="contacts__description">для сотрудников ЕВРАЗ Каспиан Сталь</div>
+        </li>
+
+        <li class="contacts">
+          <a class="contacts__email" href="mailto:vopros@evraz.com">vopros@evraz.com</a>
+        </li>
+      </ul>
+
+      <a href="#" class="btn">НАПИСАТЬ В ГОРЯЧУЮ ЛИНИЮ</a>
+    </div>
+    <!-- end page-footer__section secontd -->
+
+    <!-- start page-footer__section third -->
+    <div class="page-footer__section">
+      <h3 class="page-footer__title">Биржевые котировки</h3>
+
+      <div class="quotations">
+        <div class="quotations__date">28 декабря 12:35 (GMT)</div>
+
+        <!-- start course -->
+        <table class="quotations__course course">
+          <tr>
+            <td>EVRAZ (LSE):</td>
+            <td class="course__count">Открытие<b> 221,00</b></td>
+          </tr>
+          <tr>
+            <td><b>225.10</b> GBX</td>
+            <td class="course__count">Максимум<b> 238,80</b></td>
+          </tr>
+          <tr>
+            <td class="course__delta course__delta--up"><span>1.20 (0.54 %)</span></td>
+            <td class="course__count">Минимум<b> 221,00</b></td>
+          </tr>
+        </table>
+        <!-- end course -->
+
+        <!-- start course -->
+        <table class="quotations__course course">
+          <tr>
+            <td>Raspadskaya (MCX):</td>
+            <td class="course__count">Открытие<b> 221,00</b></td>
+          </tr>
+          <tr>
+            <td><b>78.96</b> RUB</td>
+            <td class="course__count">Максимум<b> 238,80</b></td>
+          </tr>
+          <tr>
+            <td class="course__delta course__delta--up"><span>0.65 (0.83 %)</span></td>
+            <td class="course__count">Минимум<b> 221,00</b></td>
+          </tr>
+        </table>
+        <!-- end course -->
+      </div>
+    </div>
+    <!-- end page-footer__section third -->
+
+    <!-- start page-footer__section fourth -->
+    <div class="page-footer__section">
+      <h3 class="page-footer__title">Портал</h3>
+
+      <ul class="page-footer__list">
+        <li class="page-footer__item">Обратная связь</li>
+        <li class="page-footer__item">Карта разделов портала</li>
+        <li class="page-footer__item">Заявка в Service Desk</li>
+        <li class="page-footer__item">Помощь</li>
+        <li class="page-footer__item">Команда</li>
+      </ul>
+
+      <div class="page-footer__description">
+        Если вы нашли ошибку, выделите ее курсором, нажмите одновременно клавиши «CTRL» и «ENTER» и мы скорректируем неточность.
+      </div>
+    </div>
+    <!-- end page-footer__section fourth -->
+  </div>
+</footer>
+<!-- end page-footer -->
+</body>
+</html>
